@@ -232,6 +232,42 @@ const blogPosts = [
             
             <p>Remember, building an emergency fund is a marathon, not a sprint. Be patient, stay consistent, and celebrate milestones along the way. Your future self will thank you for the financial security you're creating today. The peace of mind that comes with having a financial safety net is one of the greatest gifts you can give yourself.</p>
         `
+    },
+    {
+        id: 6,
+        title: "Women’s Cold Weather Hunting Gear Designed for Performance",
+        category: "fashion",
+        date: "2026-01-05",
+        featured: true,
+        excerpt: "Build a purpose-driven cold weather system for women hunters that delivers real warmth, mobility, and all-day performance when temperatures drop.",
+        image: "image/2-1.png",
+        content: `
+            <h2>Designed for Real-World Late Season Hunts</h2>
+            <p>When the wind is cutting across the ridgeline and every breath turns to frost, “good enough” gear stops being good enough. For women hunters, staying in the game through the coldest weeks of the season requires a system that is engineered—not improvised. True performance in cold weather is about combining the right layers, fabrics, and fit so you can move, glass, and shoot without fighting your clothing.</p>
+            <p>Women’s cold weather hunting gear should be more than a scaled-down men’s kit. A purpose-built system respects the fact that women lose and retain heat differently, carry packs differently, and move differently in steep, broken terrain. That means women-specific patterning, insulation mapping, and pocket layouts that are actually where you need them when you are on the mountain or in the stand.</p>
+
+            <img src="image/2-2.png" alt="Technical details of women’s cold weather hunting jacket" style="width: 100%; border-radius: 20px; margin: 28px 0; box-shadow: 0 5px 15px var(--shadow-soft);">
+
+            <h2>Layer One: A Base that Manages Moisture</h2>
+            <p>Every serious cold weather system starts next to skin. On long climbs and sidehills, you are going to sweat—no matter how slow you go. If that moisture stays trapped against your body, you will get chilled as soon as you stop to glass or settle into your blind. A technical women’s base layer solves this by pulling sweat away from your skin and drying quickly, so you stay warmer with less bulk.</p>
+            <p>Look for blends that combine synthetic fibers for fast dry times with soft, comfortable yarns that will not itch or chafe under a pack. A women-specific fit prevents the fabric from bunching behind your knees and elbows, which not only feels better but also keeps the material from binding when you draw your bow or shoulder a rifle.</p>
+
+            <h2>Layer Two: A Versatile, Heat-Holding Mid-Layer</h2>
+            <p>The mid-layer is the engine of your cold weather system. Instead of a single, heavy sweatshirt, a technical hoodie or 1/2 zip piece lets you fine-tune warmth as the day changes. Zip down for the hike in, zip up when the wind comes up over the ridge, and throw a shell on top when the clouds roll in. The right mid-layer keeps your core hot while letting excess heat escape.</p>
+            <p>Performance details matter here: low-bulk sleeves that slide cleanly under a shell, a drop-tail hem that stays put under a pack belt, and just enough stretch that you can climb, crawl, and twist without the fabric pulling against you. A quiet face fabric also matters, especially when animals are close enough to hear the smallest movement.</p>
+
+            <img src="image/2-3.png" alt="Woman hunter adjusting mid-layer hoodie in snowy terrain" style="width: 100%; border-radius: 20px; margin: 28px 0; box-shadow: 0 5px 15px var(--shadow-soft);">
+
+            <h2>Layer Three: Weather Protection that Works with You</h2>
+            <p>Your outer layer has one job—protect the system you have built underneath. In late season, that means blocking wind, shedding light snow, and trapping precious heat without turning you into a noisy, overbuilt statue. A women’s-specific outer layer should seal out the elements at the hood, hem, and cuffs while still letting you move into shooting position without resistance.</p>
+            <p>Insulation that is mapped to the female body keeps warmth where you lose it fastest—around the core and kidneys—without stacking unnecessary bulk in every panel. Combined with a quiet, durable face fabric, this lets you crawl into position, settle behind your rifle or bow, and execute the shot without your clothing getting in the way.</p>
+
+            <img src="image/2-4.png" alt="Woman glassing from a snowy ridge in a full cold weather hunting system" style="width: 100%; border-radius: 20px; margin: 28px 0; box-shadow: 0 5px 15px var(--shadow-soft);">
+
+            <h2>A System Built Around Women Hunters</h2>
+            <p>When you combine a moisture-wicking base layer, a responsive mid-layer, and a weatherproof outer layer that are all built for women from the ground up, everything changes. Waist belts land on your hips instead of your ribs, sleeves do not swallow your hands, and hoods track with your head so you can stay locked on target. Less fidgeting means less movement for sharp-eyed animals to pick up.</p>
+            <p>The result is simple: you stay warmer, hunt longer, and make better decisions in the final minutes of light—when the biggest opportunities usually show up. Investing in a women-specific cold weather system is not about “more gear”; it is about finally getting gear that works as hard as you do when conditions are at their worst.</p>
+        `
     }
 ];
 
@@ -396,9 +432,41 @@ const allProducts = [
                 comment: "Best savings account I've found. High interest rate, no fees, and FDIC insured. Highly recommend!"
             }
         ]
+    },
+    {
+        id: 6,
+        name: "Women’s Flex 1/2 Zip Hoodie – Cold Weather Performance Mid-Layer",
+        category: "fashion",
+        price: "Premium technical mid-layer",
+        image: "image/p-5.png",
+        description: "A purpose-built women’s mid-layer designed for cold weather hunts, balancing warmth, stretch, and quiet performance so you can hike, glass, and shoot without fighting your clothing.",
+        articleId: 6,
+        rating: 4.8,
+        reviewCount: 176,
+        buyLink: "https://www.badlandsgear.com/collections/womens-cold-weather-gear/products/flex-1-2-zip-hoodie-women",
+        reviews: [
+            {
+                author: "Kara H.",
+                rating: 5,
+                date: "2026-01-06",
+                comment: "Exactly what I wanted for late-season elk. Warm, quiet, and the women’s fit is spot on under my pack and shell."
+            },
+            {
+                author: "Megan L.",
+                rating: 5,
+                date: "2026-01-07",
+                comment: "Keeps my core warm without overheating on the hike in. The 1/2 zip and hood design are perfect for regulating temperature."
+            },
+            {
+                author: "Alison P.",
+                rating: 4,
+                date: "2026-01-08",
+                comment: "Great performance piece and super comfortable. Runs just a touch snug, but ideal once you are layered up."
+            }
+        ]
     }
 ];
 
 // Featured Products (subset of all products)
-const featuredProducts = allProducts.filter(p => [1, 2, 4].includes(p.id));
+const featuredProducts = allProducts.filter(p => [1, 2, 4, 6].includes(p.id));
 

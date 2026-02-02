@@ -57,7 +57,9 @@ function displayFeaturedArticles() {
     const featuredArticlesContainer = document.getElementById('featuredArticles');
     if (!featuredArticlesContainer) return;
     
-    const featured = blogPosts.filter(post => post.featured === true);
+    const featured = blogPosts
+        .filter(post => post.featured === true)
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
     
     if (featured.length === 0) {
         featuredArticlesContainer.innerHTML = `
